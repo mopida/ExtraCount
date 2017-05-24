@@ -10,41 +10,47 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet var MonthLabel: UILabel!
-    @IBOutlet var DayLabel: UILabel!
-    @IBOutlet var HappyLabel: UILabel!
+    @IBOutlet var monthLabel: UILabel!
+    @IBOutlet var dayLabel: UILabel!
+    @IBOutlet var happyLabel: UILabel!
     
     var number1 : Int = 0
     var number2: Int = 0
     
+    func message(){
+        if number1 == 10 && number2 == 27{
+            happyLabel.text = String("お誕生日おめでとー！")
+        }
+        
+    }
     
-    @IBAction func MonthPlus(){
+    @IBAction func monthPlus(){
         
         number1 = number1 + 1
-        MonthLabel.text = String(number1)
+        monthLabel.text = String(number1)
         
-        if number1 == 10 && number2 == 27{
-            HappyLabel.text = String("お誕生日おめでとー！")
-            }
-        }
-
+        message()
+    }
     
-    @IBAction func MonthMinus(){
+    
+    @IBAction func monthMinus(){
         
         number1 = number1 - 1
-        MonthLabel.text = String(number1)
+        monthLabel.text = String(number1)
+        message()
     }
-
-    @IBAction func DayPlus(){
+    
+    @IBAction func dayPlus(){
         
         number2 = number2 + 1
-        DayLabel.text = String(number2)
+        dayLabel.text = String(number2)
+        message()
     }
-    @IBAction func DayMinus(){
+    @IBAction func dayMinus(){
         
         number2 = number2 - 1
-        DayLabel.text = String(number2)
-        
+        dayLabel.text = String(number2)
+        message()
         
     }
     
@@ -56,12 +62,12 @@ class ViewController: UIViewController {
         
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 

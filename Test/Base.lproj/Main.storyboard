@@ -27,7 +27,7 @@
                                 <color key="backgroundColor" red="0.87374374070000005" green="0.9939747833" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="+"/>
                                 <connections>
-                                    <action selector="DayPlus" destination="BYZ-38-t0r" eventType="touchUpInside" id="eK4-RV-c7l"/>
+                                    <action selector="dayPlus" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cd7-qs-Lg9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbR-D8-tyo">
@@ -36,7 +36,7 @@
                                 <color key="backgroundColor" red="0.87374374070000005" green="0.9939747833" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="+"/>
                                 <connections>
-                                    <action selector="MonthPlus" destination="BYZ-38-t0r" eventType="touchUpInside" id="qH0-Lf-pWU"/>
+                                    <action selector="monthPlus" destination="BYZ-38-t0r" eventType="touchUpInside" id="KQI-gX-eky"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLX-dY-xZq">
@@ -45,7 +45,7 @@
                                 <color key="backgroundColor" red="0.87374374070000005" green="0.9939747833" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="-"/>
                                 <connections>
-                                    <action selector="DayMinus" destination="BYZ-38-t0r" eventType="touchUpInside" id="gZA-XF-JUh"/>
+                                    <action selector="dayMinus" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hmf-nA-kZk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lrg-oR-9Va">
@@ -54,7 +54,7 @@
                                 <color key="backgroundColor" red="0.87500745059999996" green="0.99249511960000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="-"/>
                                 <connections>
-                                    <action selector="MonthMinus" destination="BYZ-38-t0r" eventType="touchUpInside" id="eET-j1-c8M"/>
+                                    <action selector="monthMinus" destination="BYZ-38-t0r" eventType="touchUpInside" id="2rJ-VB-7yL"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2O-4W-lpd">
@@ -98,9 +98,9 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="DayLabel" destination="q0r-Dj-eFx" id="EMY-cV-Bd4"/>
-                        <outlet property="HappyLabel" destination="LlD-k2-xCA" id="8F1-Ou-cuP"/>
-                        <outlet property="MonthLabel" destination="M2O-4W-lpd" id="Yfa-cr-bm7"/>
+                        <outlet property="dayLabel" destination="q0r-Dj-eFx" id="jCV-Tz-So2"/>
+                        <outlet property="happyLabel" destination="LlD-k2-xCA" id="WBJ-BB-Kig"/>
+                        <outlet property="monthLabel" destination="M2O-4W-lpd" id="Oi5-jQ-F2g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
